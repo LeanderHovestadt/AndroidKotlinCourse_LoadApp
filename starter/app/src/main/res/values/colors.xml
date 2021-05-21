@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#07C2AA</color>
+    <color name="colorPrimaryDark">#004349</color>
+    <color name="colorAccent">#F9A825</color>
+    <color name="white">#FFFFFF</color>
+    <color name="flame_red">#A62103</color>
+    <color name="flame_orange">#F25C05</color>
+    <color name="flame_yellow_orange">#F28705</color>
+    <color name="flame_yellow">#F29F05</color>
+    <color name="flame_bright_yellow">#F2C849</color>
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DetailActivity"
+    tools:showIn="@layout/activity_detail"
+    app:layoutDescription="@xml/content_detail_scene">
+
+    <ImageView
+        android:id="@+id/fire1"
+        app:srcCompat="@drawable/ic_baseline_local_fire_department_24"
+        android:layout_height="211dp"
+        android:layout_width="165dp"
+        android:alpha="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/ok_button"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="205dp"/>
+
+    <ImageView
+        android:id="@+id/fire2"
+        android:alpha="0.0"
+        app:srcCompat="@drawable/ic_baseline_local_fire_department_24"
+        android:layout_height="34dp"
+        android:layout_width="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/filename_text"
+        app:layout_constraintEnd_toStartOf="@+id/fire9"
+        android:layout_marginEnd="80dp" />
+
+    <ImageView
+        android:id="@+id/fire3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.0"
+        app:srcCompat="@drawable/ic_baseline_local_fire_department_24"
+        app:layout_constraintBottom_toTopOf="@+id/status_text"
+        app:layout_constraintEnd_toStartOf="@+id/fire7"
+        android:layout_marginEnd="25dp" />
+
+    <ImageView
+        android:id="@+id/fire4"
+        android:alpha="0.0"
+        app:srcCompat="@drawable/ic_baseline_local_fire_department_24"
+        android:layout_height="74dp"
+        android:layout_width="113dp"
+        app:layout_constraintBottom_toTopOf="@+id/ok_button"
+        android:layout_marginBottom="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="64dp" />
+
+    <ImageView
+        android:id="@+id/fire5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.0"
+        app:srcCompat="@drawable/ic_baseline_local_fire_department_24"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp" />
+
+    <ImageView
+        android:id="@+id/fire6"
+        app:srcCompat="@drawable/ic_baseline_local_fire_department_24"
+        android:layout_height="49dp"
+        android:layout_width="45dp"
+        android:alpha="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/ok_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="300dp" />
+
+    <ImageView
+        android:id="@+id/fire7"
+        android:alpha="0.0"
+        app:srcCompat="@drawable/ic_baseline_local_fire_department_24"
+        android:layout_height="60dp"
+        android:layout_width="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/status_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="65dp" />
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:text="@string/ok_button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="start"
+        android:text="@string/file_name"
+        android:textColor="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="start"
+        android:text="@string/status"
+        android:textColor="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/status_text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/filename_text"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Retrofit - Type-safe HTTP client for Android and Java by Square Inc." />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filename_text"
+        tools:text="Success" />
+
+    <ImageView
+        android:id="@+id/fire8"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="45dp"
+        android:alpha="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_local_fire_department_24" />
+
+    <ImageView
+        android:id="@+id/fire9"
+        android:alpha="0.0"
+        app:srcCompat="@drawable/ic_baseline_local_fire_department_24"
+        android:layout_height="19dp"
+        android:layout_width="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/filename_text" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
