@@ -32,14 +32,12 @@ class DetailActivity : AppCompatActivity() {
         notificationManager.cancel(id)
 
         ok_button.setOnClickListener {
-            motion_layout.transitionToEnd {
-                finish()
-            }
+            finish()
         }
     }
 
     private fun loadBundle() {
-                intent.extras?.let {
+        intent.extras?.let {
             id = it.getInt(BUNDLE_DOWNLOAD_ID)
             status = it.getInt(BUNDLE_DOWNLOAD_STATUS)
             fileName = it.getString(BUNDLE_FILE_NAME) ?: ""
@@ -48,7 +46,7 @@ class DetailActivity : AppCompatActivity() {
 
     private fun fillContent() {
         filename_text.text = fileName
-        status_text.text = when(status) {
+        status_text.text = when (status) {
             DownloadManager.STATUS_SUCCESSFUL -> "Success"
             else -> "Failure"
         }
@@ -60,9 +58,9 @@ class DetailActivity : AppCompatActivity() {
         private const val BUNDLE_FILE_NAME = "file_name"
 
         fun getBundle(
-                id: Int,
-                status: Int,
-                fileName: String
+            id: Int,
+            status: Int,
+            fileName: String
         ): Bundle {
             return Bundle().apply {
                 putInt(BUNDLE_DOWNLOAD_ID, id)

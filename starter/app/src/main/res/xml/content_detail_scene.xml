@@ -5,7 +5,8 @@
     <Transition
         app:constraintSetEnd="@id/end"
         app:constraintSetStart="@id/start"
-        app:duration="3000">
+        app:duration="3000"
+        app:autoTransition="animateToEnd">
 
         <KeyFrameSet>
 
